@@ -1,0 +1,17 @@
+### TO OUTLINE TOU PROJECT #####
+
+
+1) What is BLAST:
+   	Description
+   	History
+   	Usage - Diffferent Blasts
+
+2) How do BLAST Algorithms work?
+       Description of Algorithms
+       Databases and queries
+       p-value, e-value
+
+3) Examples
+	Installation: source code + link + setup $PATH and .bashrc
+	Databases download
+	runs
