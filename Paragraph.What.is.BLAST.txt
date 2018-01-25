@@ -1,0 +1,13 @@
+HEADER: WHAT IS BLAST
+
+SUBHEADER: Description
+	   BLAST stands for Basic Local Alignment Search Tool and is an algorithm for comparing sequences, such as nucleotide and protein sequences. A BLAST search enables a researcher to compare a given sequence with a database of sequences and identify the ones that are similar according to a threshold.
+
+SUBHEADER: History
+	   BLAST 's story began in the 90s where reserchers Altschul, S. F., Gish, W., Miller, W., Myers, E. W. and Lipman, D. J. published a sequence detection algorithm, that was almost 50 times faster that it's counterpart, the Smith-Watterman algorithm. The need for speed was so great, that the algorithm as well as the accompaning program quickly proppeled itself as the most cited papper in the 90s and is  currently the 12th most cited papper of all time according to Nature Publishing Group. (reference: https://www.nature.com/news/the-top-100-papers-1.16224)
+
+SUBHEADER: Usage
+	   BLAST adresses one of the most fundemental problems in Bioiformatics: Detecting similar sequences with a sequence that we are interested in, but in a reasonable amount of time. Different BLAST algorithms have been described, in order to optimize for different kinds of sequences. Examples of questions that BLAST helps to adress are:
+	   Which bacterial species have a protein that is related in lineage to a certain protein with known amino-acid sequence.
+	   What other genes encode proteins that exhibit structures or motifs such as ones that have just been determined.
+	   
