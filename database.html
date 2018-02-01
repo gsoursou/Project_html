@@ -39,8 +39,14 @@ blastdbcmd -db dbname -entry 112690,112672
  </p>
   
   
+ </ul>
+<h2>  Make your own database </h2> 
+<p> You can create any FASTA file to a BLAST database with the following command where fastafile.fnn
+is the FASTA file and yourfile is the name of the database you want to create </p>
+   <p  style="background-color:rgba(222,184,135, 0.5);">
+makeblastdb -in fastafile.ffn -out blastdb/yourfile -dbtype nucl
+ </p>
   
-</ul> 
 <p> You can refer to the BLAST <a href="ftp://ftp.ncbi.nlm.nih.gov/blast/documents/blastdb.html">database documentation</a> for more details. </p>
 
 </body>
