@@ -1,0 +1,47 @@
+<!DOCTYPE html >
+<html>
+
+<body>
+
+<h1> <b> Blast Database </b> </h1>
+<h2> <b> Download a DB from NCBI </b> </h2>
+<p> We can download any BLAST databases available on the NCBI FTP site under 
+the /blast/db directory with the command   </p>
+<p  style="background-color:rgba(222,184,135, 0.5);">
+	ftp://ftp.ncbi.nlm.nih.gov/blast/db/dbname
+ </p>
+<p> where dbname is the name of the desired database to download.All the available downlowds are <a href="https://the link to installation">here</a>. For example the command ftp://ftp.ncbi.nlm.nih.gov/blast/db/16SMicrobial.tar.gz
+will download the 16SMicrobial database. </p>
+<h2> <b> Check downloaded database </b> </h2>
+<p> In order to check your database you need set the BLASTDB variable as described <a href="ftp://ftp.ncbi.nlm.nih.gov/blast/db/">here</a>. To view the general information of your database use the command   </p>
+<p  style="background-color:rgba(222,184,135, 0.5);">
+	blastdbcmd -info -db dbname
+ </p>
+<h3> Examples </h3>
+<ul>
+  <li>Print all records</li>
+  <p  style="background-color:rgba(222,184,135, 0.5);">
+	blastdbcmd -db dbname -entry all -outfmt "%t %g %T"
+ </p>
+  <li>Sort and display number of sequences for each species</li>
+    <p  style="background-color:rgba(222,184,135, 0.5);">
+blastdbcmd -db dbname -entry all -outfmt "%T"|sort|uniq -c|sort -n
+ </p>
+   <p  style="background-color:rgba(222,184,135, 0.5);">
+blastdbcmd -db dbname -entry all -outfmt "%T"|sort|uniq -c
+ </p>
+  <li>Print only specific sequences</li>
+    <p  style="background-color:rgba(222,184,135, 0.5);">
+blastdbcmd -db dbname -entry 645321669 -outfmt "%t %g %T"
+ </p>
+   <p  style="background-color:rgba(222,184,135, 0.5);">
+blastdbcmd -db dbname -entry 112690,112672
+ </p>
+  
+  
+  
+</ul> 
+<p> You can refer to the BLAST <a href="ftp://ftp.ncbi.nlm.nih.gov/blast/documents/blastdb.html">database documentation</a> for more details. </p>
+
+</body>
+</html>
